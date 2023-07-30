@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 130%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color);
+}
+
+:root {
+    --main-text-color: #232323;
+    --secondary-text-color: #A52424;
+  }
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div:first-of-type {
+    font-family: 'Pacifico', cursive;
+    color: var(--secondary-text-color);
+    font-size: 48px;
+}
+
+.header div:nth-of-type(2) ul {
+    display: flex;
+    gap: 55px;
+    list-style-type: none;
+}
+
+.header div:last-of-type a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+
+.main {
+
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container div {
+    margin-top: 120px;
+}
+
+.title-container div h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.title-container div h3 {
+    font-size: 22px;
+    line-height: 140%;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.title-container div button {
+    width: 335px;
+    height: 60px;
+    background-color: #fff;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    border: var(--secondary-text-color) 1px solid;
+}
+
+/* .title-container div button:hover {
+    background-color: var(--secondary-text-color);
+    color: #fff;
+} */
+
+.title-container img {
+    max-width: 674px;
+}
