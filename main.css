@@ -7,6 +7,13 @@
     color: var(--main-text-color);
 }
 
+@font-face {
+
+    font-family: "MonteCarlo";
+  
+    src: url("./fonts/MonteCarlo-Regular.ttf")
+  
+}
 :root {
     --main-text-color: #232323;
     --secondary-text-color: #A52424;
@@ -24,9 +31,9 @@
 }
 
 .header div:first-of-type {
-    font-family: 'Pacifico', cursive;
+    font-family: 'MonteCarlo';
+    font-size: 82px;
     color: var(--secondary-text-color);
-    font-size: 48px;
 }
 
 .header div:nth-of-type(2) ul {
@@ -38,11 +45,6 @@
 .header div:last-of-type a {
     text-decoration: none;
     color: var(--secondary-text-color);
-}
-
-
-.main {
-
 }
 
 .title-container {
@@ -82,4 +84,100 @@
 
 .title-container img {
     max-width: 674px;
+}
+
+.about-me-container {
+    margin-top: 150px;
+}
+
+.about-me-container div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-container h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.about-me-container div div:first-child {
+    position: relative;
+    width: 344px;
+    height: 560px;
+    box-shadow: 0 4px 4px 0;
+}
+
+.about-me-container div div:first-child img{
+   position: absolute;
+   top: 50px;
+   left: 100px;
+}
+
+.about-me-container div div:first-child h3{
+    padding: 470px 0 0 98px;
+    font-size: 22px;
+    line-height: 140%;
+    color: var(--secondary-text-color);
+}
+
+.about-me-container div div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    max-width: 674px;
+
+}
+
+.about-me-container div div:nth-child(2) h3 {
+    font-size: 22px;
+    line-height: 140%;
+    color: var(--secondary-text-color);
+}
+
+.about-me-container div div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    margin-top: 7px;
+}
+
+.about-me-container div div:nth-child(2) img {
+    max-width: 642px;
+    z-index: 1;
+}
+
+.about-me-container div div:nth-child(2) div::after {
+    content: '';
+    position: absolute;
+    left: 106px;
+    top: -31px;
+    width: 567px;
+    height: 330px;
+    box-shadow: 0 4px 4px 0;
+}
+
+
+.portfolio-container h2{
+    margin: 150px 0 50px 0;
+    font-size: 64px;
+}
+
+.portfolio-container div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-container div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-container div div img{
+    height: 566px;
+}
+
+.portfolio-container div div h3{
+    display: flex;
+    justify-content: space-between;
 }
